@@ -27,3 +27,11 @@ This project is a simple SQL script to manage hotel bookings.
      Shows all bookings with guest names and check-in dates, sorted in ascending order by check-in.
   5. **A query using LIMIT(with CTE).**
      Uses a CTE to find all guests who paid with Apple Pay, rders by payment amount (descending), returns the guest who made the highest Apple Pay payment.
+
+## 🧠 Schema Logic
+
+- A **hotel** can have multiple **rooms**
+- A **room** is booked by a **guest** via a **booking**
+- Each **booking** can have one or more **payments**
+- Archived bookings are stored in `archieved_bookings` (used for UNION example)
+  

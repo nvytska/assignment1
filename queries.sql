@@ -46,7 +46,7 @@ from guests g
 join bookings b on b.guest_id = g.guest_id
 order by b.check_in;
 
-
+#5
  with top_payments_by_applepay as(
  select g.guest_id, g.surname, g.name,
  p.amount, p.payment_method as method
